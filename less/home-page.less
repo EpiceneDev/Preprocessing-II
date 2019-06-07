@@ -6,12 +6,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
 
-    @media @phone {
-      flex-direction: column;
-      .first-image {
-        order: -1;
-      }
-    }
+    
     
     .text-content {
       width: 48%;
@@ -40,8 +35,22 @@
     .img-content {
       padding-right: 1%;
       padding-left: 0;
+      @media @phone {
+        order: 99;
+      }
     }
   }
+
+@media @phone {
+  .top-section {
+    top-section-content {
+      .content-padding();
+    }
+      
+  }
+    
+  }
+}
 
   .content-destination {
     width: 75%;
@@ -49,6 +58,9 @@
 
     img {
       border-radius: 10px;
+    }
+    @media @phone {
+      .content-padding();
     }
   }
 
@@ -67,7 +79,7 @@
       margin-bottom: 30px;
 
         .btn {
-          .btn-style (teal);
+          .btn-style (@eastern-blue);
         }
 
         @media @phone {
