@@ -193,6 +193,20 @@ header .nav-container nav a {
   text-decoration: none;
   color: black;
 }
+@media (max-width: 500px) {
+  header .nav-container {
+    padding: 0px;
+  }
+  header .nav-container .nav-container {
+    flex-direction: column;
+  }
+  header .nav-container .nav-container nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
@@ -209,6 +223,14 @@ header .nav-container nav a {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+}
+@media (max-width: 500px) {
+  .home .content-section {
+    flex-direction: column;
+  }
+  .home .content-section .first-image {
+    order: -1;
+  }
 }
 .home .content-section .text-content {
   width: 48%;
