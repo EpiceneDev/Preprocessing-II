@@ -1,1 +1,19 @@
-// Mixins in here
+.flex(@justify, @align){
+	display: flex;
+	justify-content: @justify;
+	align-items: @align;
+}
+
+.btn-style(@btn-color) {
+    background-color: @btn-color;
+    border-radius: 10px;
+    color: white;
+    font-size: 1.6rem;
+    text-align: center;
+    padding: 10px;
+}
+
+.content-padding() {
+    width: 100%;
+    padding: 9px 20px;
+}
